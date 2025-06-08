@@ -16,11 +16,10 @@ if (process.env.GENERATE_NODE_PORT === 'true') {
 	NODE_PORT = DEFAULT_PORT + Math.ceil(Math.random() * 1000);
 }
 
+const MODE = process.env.NODE_ENV || 'development';
 const PORT = NODE_PORT || DEFAULT_PORT;
 app.listen(PORT, () => {
-	console.log(
-		`Server startad pa port ${PORT}, i ${process.env.NODE_ENV} läge`
-	);
+	console.log(`Server startad pa port ${PORT}, i ${MODE} läge`);
 
 	if (PORT !== DEFAULT_PORT) {
 		sync();

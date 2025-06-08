@@ -15,12 +15,15 @@ const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 global.__appdir = dirname;
 
-export const logger = new Storage('logs', 'error.log');
+//export const storage = new Storage(
+//process.env.BLOCKCHAIN_DIR,
+//process.env.BLOCKCHAIN_FILE
+//);
 
-export const storage = new Storage(
-	process.env.BLOCKCHAIN_DIR,
-	process.env.BLOCKCHAIN_FILE
-);
+// Hardkod for enklare testning...
+export const logger = new Storage('logs', 'error.log');
+export const storage = new Storage('blockchain', 'blockchain.json');
+
 const readChain = await storage.readFromFile();
 export const blockChain = new Blockchain({ chain: readChain });
 
