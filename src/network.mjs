@@ -21,7 +21,7 @@ export class Network {
 		this.subscriber.subscribe(CHANNELS.BLOCKCHAIN);
 	}
 	handleMessage(channel, message) {
-		console.log(`Meddelande: \n${message}\nfrån kanal: ${channel}`);
+		console.log(`Ny kedja: \n${message}\nfrån kanal: ${channel}`);
 
 		this.blockchain.replaceChain({ chain: JSON.parse(message) });
 	}

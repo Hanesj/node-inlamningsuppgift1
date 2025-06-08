@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { AppError } from './AppError.mjs';
+import { AppError } from '../models/AppError.mjs';
 
 export class Storage {
 	#filePath = undefined;

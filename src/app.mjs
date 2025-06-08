@@ -6,7 +6,7 @@ import { AppError } from './models/AppError.mjs';
 import errorHandler from './middleware/errorHandler.mjs';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { Storage } from './models/Storage.mjs';
+import { Storage } from './repository/Storage.mjs';
 import { Network } from './network.mjs';
 
 dotenv.config({ path: './config/config.env' });

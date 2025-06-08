@@ -1,9 +1,4 @@
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:43:06 - Message: Kan ej hitta: /api/block/a "\n"
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:43:22 - Message: Kan ej hitta: /api/block/a ""
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:04 - Message: Kan ej hitta: /api/block/a 
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:13 - Message: Kan ej hitta: /api/block/a 
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:13 - Message: Kan ej hitta: /api/block/a 
-Statuscode: 400 - Status: Bad request - Method: POST - Url: /api/block/mine - Date 2025-06-08 10:44:17 - Message: Saknas eller felaktig data , Detaljer: {"dataa":"zxasdasdaaaa?"}
-Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 11:52:17 - Message: Ogiltig kedja, skriver inte ner 
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 12:57:38 - Message: Kan ej hitta: /api/block/a 
-Statuscode: 400 - Status: Bad request - Method: POST - Url: /api/block/mine - Date 2025-06-08 12:58:00 - Message: Saknas eller felaktig data , Detaljer: {"dataa":[{"wqe":"zxasdasdaaaa?"}]}
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/1 - Date 2025-06-08 21:23:07 - Message: Antal block i kedja: 1, med start från 0. 
+Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:23:20 - Message: Ogiltig kedja, skriver inte ner 
+Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:24:21 - Message: Ogiltig kedja, skriver inte ner 
+Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:24:22 - Message: Ogiltig kedja, skriver inte ner 
