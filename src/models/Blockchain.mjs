@@ -42,4 +42,12 @@ export class Blockchain {
 		}
 		return true;
 	}
+
+	replaceChain({ chain }) {
+		if (this.chain.length >= chain.length) return false;
+
+		if (!Blockchain.validChain({ chain })) return false;
+
+		this.chain = chain;
+	}
 }

@@ -7,6 +7,7 @@ import errorHandler from './middleware/errorHandler.mjs';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { Storage } from './models/Storage.mjs';
+import { Network } from './network.mjs';
 
 dotenv.config({ path: './config/config.env' });
 
@@ -22,6 +23,8 @@ export const storage = new Storage(
 );
 const readChain = await storage.readFromFile();
 export const blockChain = new Blockchain({ chain: readChain });
+
+export const network = new Network({ blockchain: blockChain });
 
 const app = express();
 

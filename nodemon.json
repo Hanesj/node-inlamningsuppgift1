@@ -1,0 +1,3 @@
+{
+	"ignore": ["./src/blockchain/", "./src/logs/error.log"]
+}
