@@ -1,0 +1,6 @@
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:43:06 - Message: Kan ej hitta: /api/block/a "\n"
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:43:22 - Message: Kan ej hitta: /api/block/a ""
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:04 - Message: Kan ej hitta: /api/block/a 
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:13 - Message: Kan ej hitta: /api/block/a 
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/a - Date 2025-06-08 10:44:13 - Message: Kan ej hitta: /api/block/a 
+Statuscode: 400 - Status: Bad request - Method: POST - Url: /api/block/mine - Date 2025-06-08 10:44:17 - Message: Saknas eller felaktig data , Detaljer: {"dataa":"zxasdasdaaaa?"}

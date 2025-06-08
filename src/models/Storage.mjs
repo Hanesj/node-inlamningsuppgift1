@@ -23,4 +23,11 @@ export class Storage {
 			throw new AppError(error, 500);
 		}
 	}
+	async appendLog(log) {
+		try {
+			await fs.appendFile(this.#filePath, log);
+		} catch (error) {
+			throw new AppError(error, 500);
+		}
+	}
 }
