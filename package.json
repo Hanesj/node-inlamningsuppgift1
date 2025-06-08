@@ -20,8 +20,7 @@
 	"dependencies": {
 		"dotenv": "^16.5.0",
 		"express": "^5.1.0",
-		"redis": "^2.8.0",
-		"uuid": "^11.1.0"
+		"redis": "^2.8.0"
 	},
 	"devDependencies": {
 		"cross-env": "^7.0.3",
