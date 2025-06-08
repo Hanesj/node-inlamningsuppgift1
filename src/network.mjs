@@ -1,7 +1,7 @@
 import redis from 'redis';
 
 const CHANNELS = {
-	BLOCKCHAIN: 'BLOCKCHAIN',
+	BLOCKCHAIN: 'NONSENSECHAIN',
 };
 
 export class Network {

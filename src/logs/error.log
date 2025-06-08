@@ -1,4 +1,6 @@
-Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/1 - Date 2025-06-08 21:23:07 - Message: Antal block i kedja: 1, med start från 0. 
-Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:23:20 - Message: Ogiltig kedja, skriver inte ner 
-Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:24:21 - Message: Ogiltig kedja, skriver inte ner 
-Statuscode: 500 - Status: Internal server error... - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:24:22 - Message: Ogiltig kedja, skriver inte ner 
+Statuscode: 400 - Status: Bad request - Method: GET - Url: /api/block/a - Date 2025-06-08 21:53:19 - Message: Måste var en positiv siffra, du har gett: /api/block/a 
+Statuscode: 400 - Status: Bad request - Method: GET - Url: /api/block/-1 - Date 2025-06-08 21:53:23 - Message: Måste var en positiv siffra, du har gett: /api/block/-1 
+Statuscode: 400 - Status: Bad request - Method: GET - Url: /api/block/asd - Date 2025-06-08 21:53:28 - Message: Måste var en positiv siffra, du har gett: /api/block/asd 
+Statuscode: 404 - Status: Resource not found - Method: GET - Url: /api/block/asd/asd - Date 2025-06-08 21:53:33 - Message: Kan ej hitta: /api/block/asd/asd 
+Statuscode: 400 - Status: Bad request - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:53:51 - Message: Saknas eller felaktig data , Requestbody: {"dataa":[{"wasdsasdsaaqe":"zxasdasdaaaa?"},{"loopi":"scooby"}],"name":"nisse"}
+Statuscode: 400 - Status: Bad request - Method: POST - Url: /api/block/mine - Date 2025-06-08 21:53:55 - Message: Saknas eller felaktig data , Requestbody: {"cata":[{"wasdsasdsaaqe":"zxasdasdaaaa?"},{"loopi":"scooby"}],"name":"nisse"}

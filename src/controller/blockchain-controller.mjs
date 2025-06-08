@@ -5,7 +5,11 @@ import { Blockchain } from '../models/Blockchain.mjs';
 import { Data } from '../models/Data.mjs';
 
 export const listAllBlocks = (req, res) => {
-	res.status(200).json({ success: true, chain: blockChain.chain });
+	res.status(200).json({
+		success: true,
+		blocks: blockChain.chain.length,
+		chain: blockChain.chain,
+	});
 };
 
 export const addBlock = catchErrorAsync(async (req, res) => {
@@ -22,7 +26,7 @@ export const addBlock = catchErrorAsync(async (req, res) => {
 	if (Blockchain.validChain({ chain: blockChain.chain })) {
 		await storage.writeToFile(blockChain.chain);
 
-		console.log('Chain is valid, writing to file');
+		console.log('Giltig kedja, skriver ner');
 		network.broadcast();
 	} else {
 		throw new AppError(`Ogiltig kedja, skriver inte ner`, 500);
@@ -36,6 +40,12 @@ export const addBlock = catchErrorAsync(async (req, res) => {
 
 export const getBlock = (req, res) => {
 	const { block } = req.params;
+	if (isNaN(parseInt(block)) || parseInt(block) < 0) {
+		throw new AppError(
+			`Måste var en positiv siffra, du har angett: ${req.originalUrl}`,
+			400
+		);
+	}
 	if (block >= blockChain.chain.length) {
 		throw new AppError(
 			`Antal block i kedja: ${blockChain.chain.length}, med start från 0.`,

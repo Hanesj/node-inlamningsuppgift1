@@ -17,12 +17,11 @@ for (let i = 0; i < 10000; i++) {
 	timediff = nextTime - previousTime;
 	times.push(timediff);
 
-	average = times.reduce((sum, values) => sum + values) / times.length;
 	console.log(
 		`Time it took to mine a block: blocknr ${
 			i + 1
 		}. Time it took: ${timediff}ms. Difficultylevel: ${
 			nextBlock.difficulty
-		}. Avg. time: ${average.toFixed(2)}ms. Hash: ${nextBlock.hash}\n`
+		}. Hash: ${nextBlock.hash}\n`
 	);
 }

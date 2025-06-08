@@ -11,7 +11,7 @@ export default async (err, req, res, next) => {
 	});
 
 	const details = err.details
-		? `, Detaljer: ${JSON.stringify(err.details)}`
+		? `, Requestbody: ${JSON.stringify(err.details)}`
 		: ``;
 	const errMsg = `Statuscode: ${err.statusCode} - Status: ${
 		err.status

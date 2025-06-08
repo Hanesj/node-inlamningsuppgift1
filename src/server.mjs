@@ -18,7 +18,9 @@ if (process.env.GENERATE_NODE_PORT === 'true') {
 
 const PORT = NODE_PORT || DEFAULT_PORT;
 app.listen(PORT, () => {
-	console.log(`Server startad pa port ${PORT}`);
+	console.log(
+		`Server startad pa port ${PORT}, i ${process.env.NODE_ENV} läge`
+	);
 
 	if (PORT !== DEFAULT_PORT) {
 		sync();
